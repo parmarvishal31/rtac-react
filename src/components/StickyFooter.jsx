@@ -46,11 +46,11 @@ function StickyFooter() {
       </div>
       <div className="flex flex-col mb-2 cursor-pointer">
         <motion.div 
-          className="flex gap-[1px] bg-black  bg-opacity-30 hover:bg-yellow-200 font-bold w-fit p-2 rounded-r-full"
+          className="flex gap-6 bg-black  bg-opacity-30 hover:bg-yellow-200 font-bold w-fit p-2 rounded-r-full"
           whileHover={{ x: 0 }}
           initial={{ x: -95 }}
         >
-          <span>Message Us</span>
+          <span>Message</span>
           <motion.span 
             className="text-2xl text-yellow-600"
             initial={{ opacity: 0, x: -50 }}
