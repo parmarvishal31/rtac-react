@@ -1,9 +1,10 @@
-import Headers from "./components/Header";
+import Header from "./components/Header"
 
  function App() {
   return (
     <div>
-      <Headers />
+      <Header />
+      <h1></h1>
     </div>
   )
 }
