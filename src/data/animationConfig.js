@@ -26,7 +26,7 @@ export const mobileNavContainerVariant = {
 };
 
 export const mobileNavListVariant = {
-  hidden: { y: -20, height: 0, opacity: 0, transition: { duration: 0.1 } }, 
+  hidden: { y: -10, height: 0, opacity: 0, transition: { duration: 0.1 } }, 
   show: { opacity: 1, height: "auto", y: 0, transition: { duration: 0.1 } },
 };
 
