@@ -99,7 +99,7 @@ const Nav = () => {
 
 function Header() {
   return (
-    <header className="sticky top-0 z-[1]   flex w-full px-4 py-2 flex-wrap items-center justify-between border-b  bg-background  font-sans font-semibold  text-text-primary backdrop-blur-[100px] " style={{boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px"}}>
+    <header className="sticky top-0 z-[1]   flex w-full px-4 py-2 flex-wrap items-center justify-between border-b  bg-white  font-sans font-semibold  text-text-primary backdrop-blur-[100px] " style={{boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px"}}>
      <NavLink to="/" className="inline-block">
         <img
           alt="Blog Logo"
