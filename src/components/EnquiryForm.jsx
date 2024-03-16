@@ -1,6 +1,6 @@
 import React from "react";
 import { FaGraduationCap } from "react-icons/fa";
-
+import { motion } from "framer-motion";
 function EnquiryForm() {
   return (
     <>
@@ -42,9 +42,13 @@ function EnquiryForm() {
             placeholder="Phone number"
           />
         </div>
-        <button className="bg-red-400 px-10 py-2 rounded-md font-bold">
+        <motion.button
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          className="relative bg-gradient-to-r from-red-400 to-pink-500 hover:from-red-500 hover:to-pink-600 px-10 py-2 rounded-md font-bold"
+        >
           Submit
-        </button>
+        </motion.button>
       </div>
     </>
   );

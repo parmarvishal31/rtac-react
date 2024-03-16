@@ -30,7 +30,7 @@ function Courses() {
         backgroundColor: "rgba(255, 255, 255, 0.5)",
       }}
     >
-      <div className="text-3xl font-bold font-mono">
+      <div className="text-3xl  font-mono">
         OUR <span className="text-yellow-300">COURSES</span>
       </div>
       <div className="mt-1 flex flex-wrap px-10 py-5 gap-2 sm:justify-center">
@@ -43,11 +43,11 @@ function Courses() {
             className="w-full sm:max-w-sm sm:w-fit"
           >
             <Card href="#">
-              <h5 className="text-2xl flex justify-center items-center gap-3 font-bold tracking-tight text-gray-900 dark:text-white">
+              <h5 className="text-2xl flex justify-center items-center gap-3  tracking-tight text-gray-900 dark:text-white">
                 <span className="text-4xl">
                   <FaGraduationCap />
                 </span>
-                <span>{course}</span>
+                <span className="">{course}</span>
               </h5>
             </Card>
           </motion.div>
@@ -64,7 +64,7 @@ function Courses() {
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: 0.5 }}
-            className="text-white font-bold rounded-md px-10 py-2 bg-red-600"
+            className="relative text-white bg-gradient-to-r from-red-400 to-pink-500 hover:from-red-500 hover:to-pink-600 px-10 py-2 rounded-md font-bold"
             onClick={() => setShowAll(true)}
           >
             More Courses
