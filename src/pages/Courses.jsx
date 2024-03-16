@@ -67,7 +67,7 @@ function Courses() {
             className="text-white font-bold rounded-md px-10 py-2 bg-red-600"
             onClick={() => setShowAll(true)}
           >
-            Load More
+            More Courses
           </motion.button>
         )}
       </motion.div>
