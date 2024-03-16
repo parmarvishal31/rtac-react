@@ -6,7 +6,7 @@ function About() {
   return (
     <div className="lg:mx-40 md:mx-10">
       <div className="mt-10 text-center">
-        <h2 className="text-3xl font-bold mb-2">
+        <h2 className="text-2xl lg:text-3xl font-bold mb-2">
           <span className="underline decoration-yellow-500 decoration-[0.25rem] motion-safe:transition-all motion-safe:duration-200 focus:decoration-[0.5rem] focus:decoration-yellow-500/50">
             About RTAC Education Franchise
           </span>

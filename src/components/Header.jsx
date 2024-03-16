@@ -10,9 +10,9 @@ import {
 import { NavLink, useLocation } from "react-router-dom";
 import Logo from "../assets/RTAC_Logo_Without _Border.png";
 
-const activeClassName = "text-red-400 me-2";
+const activeClassName = "text-red-400 me-4";
 const activeStyleCallback = ({ isActive }) =>
-  isActive ? activeClassName : " me-2 hover:text-red-400 ";
+  isActive ? activeClassName : " me-4 hover:text-red-400 ";
 
 const NavLinks = () => {
   return (
