@@ -23,7 +23,7 @@ function Courses() {
 
   return (
     <div
-      className="flex flex-col pt-4 items-center"
+      className="flex flex-col pt-4 pb-3 shadow-lg items-center"
       style={{
         backgroundImage: `url(${backgroundImage})`,
         backgroundSize: "cover",

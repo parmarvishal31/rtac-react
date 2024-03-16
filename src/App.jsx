@@ -6,30 +6,32 @@ import EnquiryForm from "./components/EnquiryForm";
 import { motion } from "framer-motion";
 import About from "./pages/About";
 import Courses from "./pages/Courses";
+import ContactUs from "./pages/ContactUs";
 
 function App() {
   return (
-    <div className="flex flex-col min-h-screen mb-11 sm:mb-2 relative">
+    <div className="flex flex-col min-h-screen mb-10 sm:mb-10  md:mb-1 relative">
       <div className="flex-grow relative overflow-auto">
         <Header />
         <main className="pt-20 mt-2 overflow-auto lg:flex lg:justify-between">
           <div className="lg:w-3/4 mx-1">
             <Slider />
           </div>
-          <motion.div
-            className="hidden lg:block lg:w-1/4 lg:pl-3 mt-4 lg:mt-0"
-            initial={{ x: -100, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            transition={{ duration: 0.5 }}
-          >
+          <div className="hidden lg:block lg:w-1/4 lg:pl-3 mt-4 lg:mt-0">
             <EnquiryForm />
-          </motion.div>
+          </div>
         </main>
         <div>
           <About />
         </div>
         <div className="mt-2">
           <Courses />
+        </div>
+        <div className="mt-3">
+          <ContactUs />
+        </div>
+        <div className="bg-customYellow p-2 flex justify-center items-center font-bold text-white font-serif">
+          <span>Copyright &copy; 2024 rtace.co.in</span>
         </div>
       </div>
       <footer className="lg:hidden fixed bottom-0 left-0 right-0">
