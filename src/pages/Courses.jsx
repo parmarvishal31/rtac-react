@@ -23,15 +23,15 @@ function Courses() {
 
   return (
     <div
-      className="flex flex-col pt-4 pb-3 shadow-lg items-center"
+      className="flex flex-col pt-4 pb-3  items-center"
       style={{
         backgroundImage: `url(${backgroundImage})`,
         backgroundSize: "cover",
         backgroundColor: "rgba(255, 255, 255, 0.5)",
       }}
     >
-      <div className="text-3xl  font-mono">
-        OUR <span className="text-yellow-300">COURSES</span>
+      <div className="text-3xl border-b-2 border-yellow-300 font-serif font-semibold">
+        OUR <span className="">COURSES</span>
       </div>
       <div className="mt-1 flex flex-wrap px-10 py-5 gap-2 sm:justify-center">
         {cards.slice(0, showAll ? cards.length : 5).map((course, index) => (
@@ -43,11 +43,11 @@ function Courses() {
             className="w-full sm:max-w-sm sm:w-fit"
           >
             <Card href="#">
-              <h5 className="text-2xl flex justify-center items-center gap-3  tracking-tight text-gray-900 dark:text-white">
+              <h5 className="text-2xl flex justify-stretch items-center gap-3  tracking-tight text-gray-900 dark:text-white">
                 <span className="text-4xl">
                   <FaGraduationCap />
                 </span>
-                <span className="">{course}</span>
+                <span className="font-mono">{course}</span>
               </h5>
             </Card>
           </motion.div>
@@ -64,7 +64,7 @@ function Courses() {
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: 0.5 }}
-            className="relative text-white bg-gradient-to-r from-red-400 to-pink-500 hover:from-red-500 hover:to-pink-600 px-10 py-2 rounded-md font-bold"
+            className="relative text-white bg-gradient-to-r from-red-400 to-pink-500 hover:from-red-500 hover:to-pink-600 px-10 py-2 font-serif rounded-md font-bold"
             onClick={() => setShowAll(true)}
           >
             More Courses

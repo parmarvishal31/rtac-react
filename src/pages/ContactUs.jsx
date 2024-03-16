@@ -42,7 +42,7 @@ function ContactUs() {
       </div>
       <div className="p-4 flex  sm:items-center flex-col gap-2">
         <div>
-          <span className="font-bold border-yellow-300 border-b-4">
+          <span className="font-bold font-serif border-yellow-300 border-b-4">
             OUR COURSES
           </span>
         </div>
@@ -64,7 +64,7 @@ function ContactUs() {
       </div>
       <div className="p-4 flex  sm:items-center flex-col gap-2">
         <div>
-          <span className="font-bold border-yellow-300 border-b-4">
+          <span className="font-bold font-serif border-yellow-300 border-b-4">
             QUICK LINKS
           </span>
         </div>
@@ -86,7 +86,7 @@ function ContactUs() {
       </div>
       <div className="p-4 flex  sm:items-center flex-col gap-2">
         <div>
-          <span className="font-bold border-yellow-300 border-b-4">
+          <span className="font-bold uppercase font-serif border-yellow-300 border-b-4">
             Contact us
           </span>
         </div>
