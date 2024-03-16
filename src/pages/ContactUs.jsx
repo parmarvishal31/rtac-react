@@ -49,7 +49,10 @@ function ContactUs() {
         <div>
           {cards.map((item) => {
             return (
-              <div className="cursor-pointer flex gap-2 items-center">
+              <div
+                key={item}
+                className="cursor-pointer flex gap-2 items-center"
+              >
                 <span className="text-sm text-customYellow">
                   <MdRectangle />
                 </span>
@@ -68,7 +71,10 @@ function ContactUs() {
         <div>
           {links.map((item) => {
             return (
-              <div className="cursor-pointer flex gap-2 items-center">
+              <div
+                key={item}
+                className="cursor-pointer flex gap-2 items-center"
+              >
                 <span className="text-sm text-customYellow">
                   <MdRectangle />
                 </span>
@@ -87,7 +93,10 @@ function ContactUs() {
         <div>
           {contacts.map((item) => {
             return (
-              <div className="cursor-pointer flex gap-2 items-center">
+              <div
+                key={item}
+                className="cursor-pointer flex gap-2 items-center"
+              >
                 <span className="text-sm text-customYellow">
                   <MdRectangle />
                 </span>
