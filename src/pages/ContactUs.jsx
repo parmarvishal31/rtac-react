@@ -2,7 +2,13 @@ import React from "react";
 import { motion } from "framer-motion";
 import Logo from "../assets/RTAC_Logo_Without _Border.png";
 import { IoLogoWhatsapp } from "react-icons/io";
-import { FaFacebook, FaLinkedin, FaLongArrowAltRight } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaInstagram,
+  FaLinkedin,
+  FaLongArrowAltRight,
+  FaTwitter,
+} from "react-icons/fa";
 import { MdRectangle } from "react-icons/md";
 
 function ContactUs() {
@@ -14,16 +20,16 @@ function ContactUs() {
       <div className="p-4 flex justify-center items-center flex-col gap-2">
         {/* Animate the image */}
         <div>
-          <img className="w-48 h-48" src={Logo} alt="Logo" />
+          <img className="w-52 h-52" src={Logo} alt="Logo" />
         </div>
         <div>
           <div className="flex gap-2 mt-2">
             {/* Wrap each icon with a motion.div for hover animation */}
             <motion.div
               whileHover={{ scale: 1.1 }} // Scale up on hover
-              className="rounded-full bg-green-500 p-2 shadow-lg cursor-pointer"
+              className="rounded-full bg-red-500 p-2 shadow-lg cursor-pointer"
             >
-              <IoLogoWhatsapp className="text-white text-2xl" />
+              <FaInstagram className="text-white text-2xl" />
             </motion.div>
             <motion.div
               whileHover={{ scale: 1.1 }} // Scale up on hover
@@ -36,6 +42,12 @@ function ContactUs() {
               className="rounded-full bg-blue-900 p-2 shadow-lg cursor-pointer"
             >
               <FaLinkedin className="text-white text-2xl" />
+            </motion.div>
+            <motion.div
+              whileHover={{ scale: 1.1 }} // Scale up on hover
+              className="rounded-full bg-sky-500 p-2 shadow-lg cursor-pointer"
+            >
+              <FaTwitter className="text-white text-2xl" />
             </motion.div>
           </div>
         </div>

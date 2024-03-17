@@ -20,3 +20,16 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+h1.hidden {
+  background: linear-gradient(
+    90deg,
+    rgb(168, 7, 7),
+    rgb(242, 162, 1),
+    rgb(242, 162, 1),
+    rgb(116, 153, 13),
+    rgb(242, 162, 1),
+    rgb(190, 86, 165)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
