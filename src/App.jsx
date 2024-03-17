@@ -10,6 +10,7 @@ import ContactUs from "./pages/ContactUs";
 import Home from "./pages/Home";
 import { useRef } from "react";
 import HeaderOld from "./components/HeaderOld";
+import Contact from "./pages/Contact";
 
 function App() {
   const homeRef = useRef(null);
@@ -50,7 +51,10 @@ function App() {
         <div ref={coursesRef} className="mt-2">
           <Courses />
         </div>
-        <div ref={contactRef} className="mt-3">
+        <div ref={contactRef} className="mt-10 mb-10">
+          <Contact />
+        </div>
+        <div className="mt-3">
           <ContactUs />
         </div>
         <div className="bg-customYellow p-2 flex justify-center items-centernpm font-bold text-white font-serif">
