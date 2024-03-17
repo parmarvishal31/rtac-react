@@ -10,6 +10,11 @@ export default {
       colors: {
         customYellow: "rgb(242, 162, 1)",
       },
+      fontFamily: {
+        poppins: ["Poppins"],
+        pompiere: ["Pompiere"],
+        josefin: ["Josefin+Slab"],
+      },
     },
   },
   plugins: [require("flowbite/plugin")],

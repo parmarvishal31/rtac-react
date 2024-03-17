@@ -20,7 +20,7 @@ function About() {
             transition={{ duration: 0.5 }}
             className="mx-auto md:w-3/4 lg:w-full"
           >
-            <p className="text-lg leading-relaxed text-justify">
+            <p className="text-lg leading-relaxed text-justify font-josefin">
               At <span className="font-bold underline">RTAC Education</span>, we
               provide quality education to children of all ages. Our mission is
               to create a fun and engaging learning environment that inspires

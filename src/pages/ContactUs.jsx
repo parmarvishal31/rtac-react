@@ -10,7 +10,7 @@ function ContactUs() {
   const links = ["Home", "About us", "Courses", "Contact us"];
   const contacts = ["Lorem ipsum dolor ", "test@gmail.com", "9876543210"];
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2 m-2">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2 m-2 font-poppins">
       <div className="p-4 flex justify-center items-center flex-col gap-2">
         {/* Animate the image */}
         <div>

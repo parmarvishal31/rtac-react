@@ -24,7 +24,7 @@ function App() {
   };
 
   return (
-    <div className="flex flex-col min-h-screen mb-10 sm:mb-10  md:mb-10 lg:mb-1 relative">
+    <div className="flex flex-col min-h-screen mb-10 sm:mb-10  md:mb-10 lg:mb-1 relative font-josefin">
       <div className="flex-grow relative  overflow-auto">
         <HeaderOld
           homeRef={homeRef}
