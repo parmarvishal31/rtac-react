@@ -77,11 +77,11 @@ export default function HeaderOld({
         as="div"
         className="lg:hidden"
         open={mobileMenuOpen}
-        onClose={() => setMobileMenuOpen(false)}
+        onClose={setMobileMenuOpen}
       >
         <div className="fixed inset-0 z-10" />
-        <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full max-w-sm bg-white overflow-hidden">
-          <div className="flex items-center justify-between px-4 py-2">
+        <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+          <div className="flex items-center justify-between">
             <a to="/" className="-m-1.5 p-1.5"></a>
             <button
               type="button"
@@ -92,49 +92,51 @@ export default function HeaderOld({
               <XMarkIcon className="h-6 w-6" aria-hidden="true" />
             </button>
           </div>
-          <motion.div
-            initial={{ opacity: 0, y: -50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.3 }}
-            className="overflow-y-auto max-h-72" // Adjust height as needed
+          <motion.div // Wrap with motion.div for animation
+            initial={{ opacity: 0, y: -50 }} // Initial animation properties
+            animate={{ opacity: 1, y: 0 }} // Animation properties to animate to
+            transition={{ duration: 0.3 }} // Transition duration
+            className="mt-6 flow-root"
           >
-            <div className="py-6">
-              <button
-                onClick={() => {
-                  scrollToSection(homeRef);
-                  setMobileMenuOpen(!mobileMenuOpen);
-                }}
-                className="block rounded-lg px-4 py-2 text-base font-semibold text-gray-900 hover:bg-gray-50"
-              >
-                Home
-              </button>
-              <button
-                onClick={() => {
-                  scrollToSection(coursesRef);
-                  setMobileMenuOpen(!mobileMenuOpen);
-                }}
-                className="block rounded-lg px-4 py-2 text-base font-semibold text-gray-900 hover:bg-gray-50 mt-2"
-              >
-                Courses
-              </button>
-              <button
-                onClick={() => {
-                  scrollToSection(aboutRef);
-                  setMobileMenuOpen(!mobileMenuOpen);
-                }}
-                className="block rounded-lg px-4 py-2 text-base font-semibold text-gray-900 hover:bg-gray-50 mt-2"
-              >
-                About us
-              </button>
-              <button
-                onClick={() => {
-                  scrollToSection(contactRef);
-                  setMobileMenuOpen(!mobileMenuOpen);
-                }}
-                className="block rounded-lg px-4 py-2 text-base font-semibold text-gray-900 hover:bg-gray-50 mt-2"
-              >
-                Contact us
-              </button>
+            <div className="-my-6 divide-y divide-gray-500/10">
+              <div className="space-y-2 py-6">
+                <button
+                  onClick={() => {
+                    scrollToSection(homeRef);
+                    setMobileMenuOpen(!mobileMenuOpen);
+                  }}
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                >
+                  Home
+                </button>
+                <button
+                  onClick={() => {
+                    scrollToSection(coursesRef);
+                    setMobileMenuOpen(!mobileMenuOpen);
+                  }}
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                >
+                  Courses
+                </button>
+                <button
+                  onClick={() => {
+                    scrollToSection(aboutRef);
+                    setMobileMenuOpen(!mobileMenuOpen);
+                  }}
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                >
+                  About us
+                </button>
+                <button
+                  onClick={() => {
+                    scrollToSection(contactRef);
+                    setMobileMenuOpen(!mobileMenuOpen);
+                  }}
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                >
+                  Contact us
+                </button>
+              </div>
             </div>
           </motion.div>
         </Dialog.Panel>
