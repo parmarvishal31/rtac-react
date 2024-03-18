@@ -1,39 +1,21 @@
 import { Carousel } from "flowbite-react";
-import React, { useRef, useEffect } from "react";
+import React from "react";
 import CoverOne from "../assets/cover1.jpg";
-
 function NewSlider() {
-  const carouselRef = useRef(null);
-
-  useEffect(() => {
-    const calculateCarouselHeight = () => {
-      const images = carouselRef.current.querySelectorAll(".carousel-image");
-      let maxHeight = 0;
-      images.forEach((image) => {
-        maxHeight = Math.max(maxHeight, image.offsetHeight);
-      });
-      carouselRef.current.style.height = `${maxHeight}px`;
-    };
-
-    calculateCarouselHeight();
-    window.addEventListener("resize", calculateCarouselHeight);
-    return () => window.removeEventListener("resize", calculateCarouselHeight);
-  }, []);
-
   return (
-    <div ref={carouselRef} className="overflow-hidden">
-      <Carousel showIndicators={false}>
+    <div className="h-56 sm:h-64 xl:h-80 2xl:h-96">
+      <Carousel>
         <div>
-          <img className="w-full carousel-image" src={CoverOne} alt="cover1" />
+          <img className="w-full" src={CoverOne} />
         </div>
         <div>
-          <img className="w-full carousel-image" src={CoverOne} alt="cover1" />
+          <img className="w-full" src={CoverOne} />
         </div>
         <div>
-          <img className="w-full carousel-image" src={CoverOne} alt="cover1" />
+          <img className="w-full" src={CoverOne} />
         </div>
         <div>
-          <img className="w-full carousel-image" src={CoverOne} alt="cover1" />
+          <img className="w-full" src={CoverOne} />
         </div>
       </Carousel>
     </div>
