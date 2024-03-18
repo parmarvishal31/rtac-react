@@ -17,6 +17,7 @@ export default function HeaderOld({
   coursesRef,
   aboutRef,
   homeRef,
+  membershipRef
 }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -70,6 +71,12 @@ export default function HeaderOld({
             className="text-sm font-semibold leading-6 text-gray-900"
           >
             Contact us
+          </button>
+          <button
+            onClick={() => scrollToSection(membershipRef)}
+            className="text-sm font-semibold leading-6 text-gray-900"
+          >
+            Membership
           </button>
         </div>
       </nav>
@@ -135,6 +142,15 @@ export default function HeaderOld({
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Contact us
+                </button>
+                <button
+                  onClick={() => {
+                    scrollToSection(membershipRef);
+                    setMobileMenuOpen(!mobileMenuOpen);
+                  }}
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                >
+                 Membership
                 </button>
               </div>
             </div>

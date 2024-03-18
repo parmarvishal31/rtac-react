@@ -18,6 +18,7 @@ function App() {
   const aboutRef = useRef(null);
   const coursesRef = useRef(null);
   const contactRef = useRef(null);
+  const membershipRef = useRef(null);
   const scrollToSection = (refEle) => {
     window.scrollTo({
       top: refEle.current.offsetTop,
@@ -33,6 +34,7 @@ function App() {
           aboutRef={aboutRef}
           coursesRef={coursesRef}
           contactRef={contactRef}
+          membershipRef={membershipRef}
           scrollToSection={scrollToSection}
         />
         <main className=" mt-2 overflow-auto lg:flex lg:justify-between">
@@ -52,8 +54,9 @@ function App() {
         <div ref={coursesRef} className="mt-2">
           <Courses />
         </div>
-        <div>
-          <Pricing />
+        <div ref={membershipRef} className="mt-10">
+          <div className="flex justify-center items-center" ><span className="text-3xl font-bold font-serif border-b-2 border-yellow-300">We Are Providing</span></div>
+          <div><Pricing /></div>
         </div>
         <div ref={contactRef} className="mt-10 mb-10">
           <Contact />
