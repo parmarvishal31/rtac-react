@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 function Home() {
   return (
-    <div className="mt-10 flex flex-col gap-4 lg:mx-40 md:mx-10 justify-center items-center">
+    <div className="mt-5 flex flex-col gap-4 lg:mx-40 md:mx-10 justify-center items-center">
       <h1 className="text-4xl font-bold text-center mb-6">
         Welcome, RTAC Education
       </h1>

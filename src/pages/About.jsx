@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Photo from "../assets/AboutPhoto.png";
+import { Link } from "react-router-dom";
 
 function About() {
   return (
@@ -44,14 +45,12 @@ function About() {
         </div>
       </div>
       <div className="flex justify-center mt-3">
-        <motion.button
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.5 }}
+        <Link
+          to={"/about"}
           className="relative text-white bg-gradient-to-r from-red-400 to-pink-500 hover:from-red-500 hover:to-pink-600 px-10 py-2 rounded-md font-bold"
         >
           Know More
-        </motion.button>
+        </Link>
       </div>
     </div>
   );
