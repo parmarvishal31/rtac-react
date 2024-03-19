@@ -1,9 +1,7 @@
 // import Header from "./components/Header";
 import StickyFooter from "./components/StickyFooter";
 import Footer from "./components/Footer";
-import Slider from "./components/Slider";
 import EnquiryForm from "./components/EnquiryForm";
-import { motion } from "framer-motion";
 import About from "./pages/About";
 import Courses from "./pages/Courses";
 import ContactUs from "./pages/ContactUs";
@@ -11,10 +9,7 @@ import Home from "./pages/Home";
 import { useRef } from "react";
 import HeaderOld from "./components/HeaderOld";
 import Contact from "./pages/Contact";
-import Pricing from "./components/Pricing";
-import { Route, Routes } from "react-router-dom";
-import AboutDetails from "./components/AboutDetails";
-import NewSlider from "./components/NewSlider";
+import SliderTwo from "./components/SliderTwo";
 
 function App() {
   const homeRef = useRef(null);
@@ -41,9 +36,9 @@ function App() {
             membershipRef={membershipRef}
             scrollToSection={scrollToSection}
           />
-          <main className="mt-4  overflow-auto lg:flex lg:justify-between">
-            <div className="lg:w-3/4 mx-1 bg-black">
-              <NewSlider />
+          <main className="mt-4   overflow-auto lg:flex lg:justify-between">
+            <div className="lg:w-3/4 mx-1">
+              <SliderTwo />
             </div>
             <div className=" lg:block lg:w-1/4 lg:pl-3 mt-4 lg:mt-0">
               <EnquiryForm />
@@ -58,7 +53,7 @@ function App() {
           <div ref={coursesRef} className="mt-2">
             <Courses />
           </div>
-          <div ref={membershipRef} className="mt-10">
+          {/* <div ref={membershipRef} className="mt-10">
             <div className="flex justify-center items-center">
               <span className="text-3xl font-bold font-serif border-b-2 border-yellow-300">
                 We Are Providing
@@ -67,7 +62,7 @@ function App() {
             <div>
               <Pricing />
             </div>
-          </div>
+          </div> */}
           <div ref={contactRef} className="mt-10 mb-10">
             <Contact />
           </div>

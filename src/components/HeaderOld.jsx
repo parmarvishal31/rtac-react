@@ -72,12 +72,12 @@ export default function HeaderOld({
           >
             Contact us
           </button>
-          <button
+          {/* <button
             onClick={() => scrollToSection(membershipRef)}
             className="text-sm font-semibold leading-6 text-gray-900"
           >
             Membership
-          </button>
+          </button> */}
         </div>
       </nav>
       <Dialog
@@ -143,7 +143,7 @@ export default function HeaderOld({
                 >
                   Contact us
                 </button>
-                <button
+                {/* <button
                   onClick={() => {
                     scrollToSection(membershipRef);
                     setMobileMenuOpen(!mobileMenuOpen);
@@ -151,7 +151,7 @@ export default function HeaderOld({
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Membership
-                </button>
+                </button> */}
               </div>
             </div>
           </motion.div>
