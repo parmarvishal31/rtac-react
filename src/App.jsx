@@ -12,6 +12,7 @@ import Contact from "./pages/Contact";
 import SliderTwo from "./components/SliderTwo";
 import Gols from "./components/Gols";
 import Why from "./components/Why";
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 
 function App() {
   const homeRef = useRef(null);
@@ -93,6 +94,7 @@ function App() {
           <StickyFooter />
         </footer>
       </div>
+      <ScrollToTop />
     </div>
   );
 }
