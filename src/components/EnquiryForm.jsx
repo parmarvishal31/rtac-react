@@ -2,12 +2,14 @@ import React from "react";
 import { FaGraduationCap } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { useForm, ValidationError } from "@formspree/react";
+import toast from "react-hot-toast";
 
 function EnquiryForm() {
   const [state, handleSubmit] = useForm("xoqgndqd");
   if (state.succeeded) {
-    console.log("state: ", state);
-    // toast.success("Thank you");
+    toast.success(
+      "Your request has been successfully submitted. We will connect with you as soon as possible."
+    );
   }
   return (
     <>
