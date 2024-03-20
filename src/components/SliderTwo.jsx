@@ -42,10 +42,10 @@ function SliderTwo() {
         </ul>
       </div>
       <button onClick={prevSlide} className="absolute text-2xl md:text-3xl left-0 top-1/2 transform -translate-y-1/2 bg-transparent">
-        <FaChevronCircleLeft className="text-white" />
+        <FaChevronCircleLeft className=" opacity-50" />
       </button>
       <button onClick={nextSlide} className="absolute text-2xl md:text-3xl right-0 top-1/2 transform -translate-y-1/2 bg-transparent">
-        <FaChevronCircleRight className="text-white" />
+        <FaChevronCircleRight className="opacity-50" />
       </button>
     </div>
   );

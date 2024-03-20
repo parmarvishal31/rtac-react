@@ -8,7 +8,7 @@ function About() {
     <div className="lg:mx-40 md:mx-10">
       <div className="mt-10 text-center">
         <h2 className="text-2xl lg:text-3xl font-bold mb-2">
-          <span className="text-xl sm:text-2xl border-b-2 border-yellow-300 font-serif font-semibold">
+          <span className="text-2xl border-b-2 font-serif border-yellow-300 lg:text-3xl font-semibold text-center ">
             About RTAC Education
           </span>
         </h2>

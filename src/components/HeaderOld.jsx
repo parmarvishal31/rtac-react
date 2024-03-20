@@ -34,7 +34,7 @@ export default function HeaderOld({
           <span className="sr-only">Your Company</span>
           <img className="h-16 w-auto" src={Logo} alt="Logo" />
           <h1 className="hidden lg:block font-semibold font-serif text-xl">
-            Right track institute of advanced computing
+            Right Track Institute Of Advanced Computing
           </h1>
         </a>
         <div className="flex lg:hidden">

@@ -10,6 +10,8 @@ import { useRef } from "react";
 import HeaderOld from "./components/HeaderOld";
 import Contact from "./pages/Contact";
 import SliderTwo from "./components/SliderTwo";
+import Gols from "./components/Gols";
+import Why from "./components/Why";
 
 function App() {
   const homeRef = useRef(null);
@@ -63,6 +65,17 @@ function App() {
               <Pricing />
             </div>
           </div> */}
+          <div>
+            <Why />
+          </div>
+          <div className="mt-4">
+            <div className="flex justify-center items-center ">
+              <div className="text-2xl border-b-2 font-serif border-yellow-300 lg:text-3xl font-semibold text-center">
+                Our Purpose
+              </div>
+            </div>
+            <Gols />
+          </div>
           <div ref={contactRef} className="mt-10 mb-10">
             <Contact />
           </div>
