@@ -15,6 +15,9 @@ import Why from "./components/Why";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 
 function App() {
+  const now = new Date();
+  const currentYear = now.getFullYear();
+
   const homeRef = useRef(null);
   const aboutRef = useRef(null);
   const coursesRef = useRef(null);
@@ -84,7 +87,7 @@ function App() {
             <ContactUs />
           </div>
           <div className="bg-customYellow p-2 flex justify-center items-centernpm font-bold text-white font-serif">
-            <span>Copyright &copy; 2024 rtace.co.in</span>
+            <span>Copyright &copy; {currentYear} www.rtacedu.co.in</span>
           </div>
         </div>
         <footer className="lg:hidden fixed bottom-0 left-0 right-0">
