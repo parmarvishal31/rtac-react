@@ -1,7 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Logo from "../assets/RTAC_Logo_Without _Border.png";
-import { IoLogoWhatsapp } from "react-icons/io";
+import IsoLogo from "../assets/isologo.png";
+import LogoTwo from "../assets/ukaslogo.png";
 import {
   FaFacebook,
   FaInstagram,
@@ -99,23 +100,24 @@ function ContactUs() {
       <div className="p-4 flex  sm:items-center flex-col gap-2">
         <div>
           <span className="font-bold uppercase font-serif border-yellow-300 border-b-4">
-            Contact us
+            Accreditations
           </span>
         </div>
-        <div>
-          {contacts.map((item) => {
-            return (
-              <div
-                key={item}
-                className="cursor-pointer flex gap-2 items-center"
-              >
-                <span className="text-sm text-customYellow">
-                  <MdRectangle />
-                </span>
-                <span>{item}</span>
-              </div>
-            );
-          })}
+        <div className="flex flex-wrap">
+          <div>
+            <img
+              className="w-16 h-16 sm:w-24 sm:h-20"
+              src={IsoLogo}
+              alt="IsoLogo"
+            />
+          </div>
+          <div>
+            <img
+              className="w-16 h-16 sm:w-24 sm:h-20"
+              src={LogoTwo}
+              alt="IsoLogo"
+            />
+          </div>
         </div>
       </div>
     </div>
