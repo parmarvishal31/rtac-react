@@ -31,9 +31,9 @@ function Gols() {
               <FcIdea />
             </div>
             <div className="text-justify">
-              Our goal is to build trusting relationships with Kids that will
-              help them become independent, more self-assured, and knowledgeable
-              about technology.
+              Our goal is to build trusting relationships with students that
+              will help them become independent, more self-assured, and
+              knowledgeable about technology.
             </div>
           </div>
         </div>
