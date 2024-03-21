@@ -3,11 +3,15 @@ import { IoLogoWhatsapp } from "react-icons/io";
 import { PiPhoneCallFill } from "react-icons/pi";
 import { MdEmail } from "react-icons/md";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 function StickyFooter() {
+  const phoneNumber = "+917778881058";
+  const email = "mailto:rtacedu@gmail.com";
+  const whatsup = "https://api.whatsapp.com/send?phone=7778881058";
   return (
     <>
-      <div className="flex flex-col mb-2 cursor-pointer w-fit">
+      <Link to={whatsup} className="flex flex-col mb-2 cursor-pointer w-fit">
         <motion.div
           className="flex gap-2 bg-black  bg-opacity-30 hover:bg-green-200 font-bold w-fit p-2 rounded-r-full"
           whileHover={{ x: 0 }}
@@ -23,9 +27,9 @@ function StickyFooter() {
             <IoLogoWhatsapp />
           </motion.span>
         </motion.div>
-      </div>
+      </Link>
 
-      <div className="flex flex-col mb-2 cursor-pointer">
+      <Link to={phoneNumber} className="flex flex-col mb-2 cursor-pointer">
         <motion.div
           className="flex gap-[12px] bg-black  bg-opacity-30 hover:bg-red-200 font-bold w-fit p-2 rounded-r-full"
           whileHover={{ x: 0 }}
@@ -41,8 +45,8 @@ function StickyFooter() {
             <PiPhoneCallFill />
           </motion.span>
         </motion.div>
-      </div>
-      <div className="flex flex-col mb-2 cursor-pointer">
+      </Link>
+      <Link to={email} className="flex flex-col mb-2 cursor-pointer">
         <motion.div
           className="flex gap-6 bg-black  bg-opacity-30 hover:bg-yellow-200 font-bold w-fit p-2 rounded-r-full"
           whileHover={{ x: 0 }}
@@ -58,7 +62,7 @@ function StickyFooter() {
             <MdEmail />
           </motion.span>
         </motion.div>
-      </div>
+      </Link>
     </>
   );
 }
