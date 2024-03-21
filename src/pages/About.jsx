@@ -21,15 +21,25 @@ function About() {
             transition={{ duration: 0.5 }}
             className="mx-auto md:w-3/4 lg:w-full"
           >
-            <p className="text-lg leading-relaxed text-justify font-josefin">
-              At <span className="font-bold underline">RTAC Education</span>, we
-              provide quality education to children of all ages. Our mission is
-              to create a fun and engaging learning environment that inspires
-              students to reach their full potential. We believe in the power of
-              education and strive to empower every student with the skills and
-              knowledge they need to succeed. We offer a wide range of
-              educational services, from individual tutoring sessions to group
-              classes.
+            <p className="text-lg   text-justify  font-josefin mb-4">
+              We are a leading provider of franchise opportunities, specializing
+              in computer training and education services. Our mission is to
+              empower individuals with the knowledge and skills needed to thrive
+              in today's digital world.
+            </p>
+            <p className="text-lg   text-justify  font-josefin mb-4">
+              At RTAC Education, we understand the importance of quality
+              education and ongoing support. That's why we offer comprehensive
+              franchise packages designed to help our partners succeed. Whether
+              you're an experienced business owner or a budding entrepreneur,
+              our franchise opportunities provide a solid foundation for growth
+              and prosperity.
+            </p>
+            <p className="text-lg   text-justify  font-josefin mb-4">
+              Our commitment to excellence extends beyond our franchise partners
+              to the students we serve. We believe in providing cutting-edge
+              training programs that equip individuals with the practical skills
+              and knowledge needed to excel in today's competitive job market.
             </p>
           </motion.div>
         </div>
@@ -43,14 +53,6 @@ function About() {
             className="w-[30rem] h-[24rem]"
           />
         </div>
-      </div>
-      <div className="flex justify-center mt-3">
-        <Link
-          to={"/about"}
-          className="relative text-white bg-gradient-to-r from-red-400 to-pink-500 hover:from-red-500 hover:to-pink-600 px-10 py-2 rounded-md font-bold"
-        >
-          Know More
-        </Link>
       </div>
     </div>
   );

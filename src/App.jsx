@@ -84,7 +84,14 @@ function App() {
             <Contact />
           </div>
           <div className="mt-3">
-            <ContactUs />
+            <ContactUs
+              homeRef={homeRef}
+              aboutRef={aboutRef}
+              coursesRef={coursesRef}
+              contactRef={contactRef}
+              membershipRef={membershipRef}
+              scrollToSection={scrollToSection}
+            />
           </div>
           <div className="bg-customYellow p-2 flex justify-center items-centernpm font-bold text-white font-serif">
             <span>Copyright &copy; {currentYear} www.rtacedu.co.in</span>

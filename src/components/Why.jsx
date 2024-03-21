@@ -31,8 +31,8 @@ function Why() {
               course to the students.
             </span>
           </div>
-          <div className="text-lg flex items-center gap-3  text-justify  font-josefin">
-            <span className="text-sm text-customYellow">
+          <div className="text-lg flex  gap-3  text-justify  font-josefin">
+            <span className="text-sm mt-2 text-customYellow">
               <MdRectangle />
             </span>
             <span>
@@ -40,13 +40,30 @@ function Why() {
               not about our selves.
             </span>
           </div>
-          <div className="text-lg flex items-center gap-3  text-justify  font-josefin">
-            <span className="text-sm text-customYellow">
+          <div className="text-lg flex  gap-3  text-justify  font-josefin">
+            <span className="text-sm mt-2 text-customYellow">
               <MdRectangle />
             </span>
             <span>
               That's how we want to be treated, and that's how we
               treat our clients.
+            </span>
+          </div>
+          <div className="text-lg flex  gap-3  text-justify  font-josefin">
+            <span className="text-sm mt-2 text-customYellow">
+              <MdRectangle />
+            </span>
+            <span>
+              Opportunities for growth and expansion in the thriving field of
+              computer education.
+            </span>
+          </div>
+          <div className="text-lg flex  gap-3  text-justify  font-josefin">
+            <span className="text-sm mt-2 text-customYellow">
+              <MdRectangle />
+            </span>
+            <span>
+              Comprehensive training and ongoing support for franchise partners.
             </span>
           </div>
         </div>
