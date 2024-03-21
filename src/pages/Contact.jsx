@@ -12,7 +12,7 @@ function Contact() {
       >
         <iframe
           className="w-80 lg:w-[100vw]   h-80"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.4019318017095!2d71.18456603151503!3d23.00901001000022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395bd54c92fd08bd%3A0xd616a2b4b3d5a94b!2sParmar%20electronics!5e0!3m2!1sen!2sin!4v1710681613391!5m2!1sen!2sin"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.541696407727!2d71.18438487500316!3d23.003874617026227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395a2b6e20443833%3A0x8360bd228efbb6bc!2sRight%20Track%20Institute%20of%20Advanced%20Computing!5e0!3m2!1sen!2sin!4v1711008140596!5m2!1sen!2sin"
           style={{
             border: "0",
             boxShadow:

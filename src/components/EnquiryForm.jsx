@@ -77,6 +77,21 @@ function EnquiryForm() {
             />
             <ValidationError prefix="city" field="city" errors={state.errors} />
           </div>
+          <div className="w-full">
+            <textarea
+              rows={2}
+              type="text"
+              className="p-2 w-full rounded-md bg-slate-100 focus:ring-2 focus:ring-red-400 outline-none focus:outline-none"
+              name="message"
+              id=""
+              placeholder="message"
+            />
+            <ValidationError
+              prefix="message"
+              field="message"
+              errors={state.errors}
+            />
+          </div>
           <motion.button
             type="submit"
             whileHover={{ scale: 1.05 }}
