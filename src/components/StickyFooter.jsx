@@ -11,10 +11,7 @@ function StickyFooter() {
   const whatsup = "https://api.whatsapp.com/send?phone=7778881058";
   return (
     <>
-      <Link
-        to={whatsup}
-        className="flex bg-black flex-col mb-2 cursor-pointer w-fit"
-      >
+      <Link to={whatsup} className="flex flex-col mb-2 cursor-pointer w-fit">
         <motion.div
           className="flex gap-2 bg-black  bg-opacity-30 hover:bg-green-200 font-bold w-fit p-2 rounded-r-full"
           whileHover={{ x: 0 }}

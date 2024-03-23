@@ -30,12 +30,12 @@ function ContactUs({
   ];
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2 m-2 font-poppins">
-      <div className="p-4 flex justify-center items-center flex-col gap-2">
+      <div className="p-4 lg:ml-20 flex justify-center items-center flex-col gap-2">
         <div>
           <img className="w-52 h-52" src={Logo} alt="Logo" />
         </div>
         <div>
-          <div className="flex gap-2 mt-2">
+          <div className="flex gap-2 z-10 mt-2">
             <Link
               to={
                 "https://www.instagram.com/rtac_official?igsh=MXBnb2tqMjlpamR2aw=="
@@ -130,7 +130,7 @@ function ContactUs({
           ))}
         </div>
       </div>
-      <div className="p-4 flex  sm:items-center flex-col gap-2">
+      <div className="p-4 flex lg:mr-32  sm:items-center flex-col gap-2">
         <div>
           <span className="font-bold uppercase font-serif border-yellow-300 border-b-4">
             Accreditations

@@ -100,7 +100,7 @@ function App() {
         <footer className="lg:hidden fixed bottom-0 left-0 right-0">
           <Footer />
         </footer>
-        <footer className="hidden lg:block fixed bottom-8 left-0 right-0">
+        <footer className="hidden  lg:block fixed bottom-8 left-0">
           <StickyFooter />
         </footer>
       </div>
