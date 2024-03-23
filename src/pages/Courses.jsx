@@ -4,7 +4,6 @@ import backgroundImage from "../assets/b.png";
 
 import { Card } from "flowbite-react";
 import { FaGraduationCap } from "react-icons/fa";
-import Office from "../assets/office.png";
 function Courses() {
   const [showAll, setShowAll] = useState(false);
   const cards = [
@@ -69,7 +68,7 @@ function Courses() {
         "Acquire skills to diagnose and repair mobile devices such as smartphones and tablets. Learn about hardware components, troubleshooting techniques, and software repair methods.",
     },
     {
-      name: "Beauty Parlor",
+      name: "Beauty Parlour",
       icon: FaGraduationCap,
       description:
         "Enter the beauty industry by learning essential skills in skincare, makeup application, hairstyling, and salon management to start your own beauty parlor or work as a professional beautician.",

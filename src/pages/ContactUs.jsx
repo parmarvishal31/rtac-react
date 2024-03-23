@@ -2,7 +2,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import Logo from "../assets/RTAC_Logo_Without _Border.png";
 import IsoLogo from "../assets/isologo.png";
-import LogoTwo from "../assets/ukaslogo.png";
 import {
   FaFacebook,
   FaInstagram,
@@ -11,6 +10,7 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 import { MdRectangle } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 function ContactUs({
   scrollToSection,
@@ -36,30 +36,53 @@ function ContactUs({
         </div>
         <div>
           <div className="flex gap-2 mt-2">
-            <motion.div
-              whileHover={{ scale: 1.1 }}
-              className="rounded-full bg-red-500 p-2 shadow-lg cursor-pointer"
+            <Link
+              to={
+                "https://www.instagram.com/rtac_official?igsh=MXBnb2tqMjlpamR2aw=="
+              }
             >
-              <FaInstagram className="text-white text-2xl" />
-            </motion.div>
-            <motion.div
-              whileHover={{ scale: 1.1 }}
-              className="rounded-full bg-blue-500 p-2 shadow-lg cursor-pointer"
+              <motion.div
+                whileHover={{ scale: 1.1 }}
+                className="rounded-full bg-red-500 p-2 shadow-lg cursor-pointer"
+              >
+                <FaInstagram className="text-white text-2xl" />
+              </motion.div>
+            </Link>
+            <Link
+              to={
+                "https://www.facebook.com/profile.php?id=61555670246235&mibextid=ZbWKwL"
+              }
             >
-              <FaFacebook className="text-white text-2xl" />
-            </motion.div>
-            <motion.div
-              whileHover={{ scale: 1.1 }}
-              className="rounded-full bg-blue-900 p-2 shadow-lg cursor-pointer"
+              <motion.div
+                whileHover={{ scale: 1.1 }}
+                className="rounded-full bg-blue-500 p-2 shadow-lg cursor-pointer"
+              >
+                <FaFacebook className="text-white text-2xl" />
+              </motion.div>
+            </Link>
+            <Link
+              to={
+                "https://www.linkedin.com/in/rtac-education-329a862bb?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              }
             >
-              <FaLinkedin className="text-white text-2xl" />
-            </motion.div>
-            <motion.div
-              whileHover={{ scale: 1.1 }}
-              className="rounded-full bg-sky-500 p-2 shadow-lg cursor-pointer"
+              <motion.div
+                whileHover={{ scale: 1.1 }}
+                className="rounded-full bg-blue-900 p-2 shadow-lg cursor-pointer"
+              >
+                <FaLinkedin className="text-white text-2xl" />
+              </motion.div>
+            </Link>
+
+            <Link
+              to={"https://x.com/Rtac_Official?t=Q0eVMuSd6m-tfb_wManHUA&s=09"}
             >
-              <FaTwitter className="text-white text-2xl" />
-            </motion.div>
+              <motion.div
+                whileHover={{ scale: 1.1 }}
+                className="rounded-full bg-sky-500 p-2 shadow-lg cursor-pointer"
+              >
+                <FaTwitter className="text-white text-2xl" />
+              </motion.div>
+            </Link>
           </div>
         </div>
       </div>
@@ -116,15 +139,8 @@ function ContactUs({
         <div className="flex flex-wrap">
           <div>
             <img
-              className="w-16 h-16 sm:w-24 sm:h-20"
+              className="w-40 h-16 sm:w-40 sm:h-20"
               src={IsoLogo}
-              alt="IsoLogo"
-            />
-          </div>
-          <div>
-            <img
-              className="w-16 h-16 sm:w-24 sm:h-20"
-              src={LogoTwo}
               alt="IsoLogo"
             />
           </div>
