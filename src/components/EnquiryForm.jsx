@@ -5,7 +5,8 @@ import { useForm, ValidationError } from "@formspree/react";
 import toast from "react-hot-toast";
 
 function EnquiryForm() {
-  const [state, handleSubmit] = useForm("xoqgndqd");
+  const key = import.meta.env.VITE_EMAIL_KEY;
+  const [state, handleSubmit] = useForm(key);
   if (state.succeeded) {
     toast.success(
       "Your request has been successfully submitted. We will connect with you as soon as possible."
