@@ -139,7 +139,7 @@ function ContactUs({
         <div className="flex flex-wrap">
           <div>
             <img
-              className="w-40 h-16 sm:w-40 sm:h-20"
+              className="w-40 h-16 sm:w-56 sm:h-24"
               src={IsoLogo}
               alt="IsoLogo"
             />
